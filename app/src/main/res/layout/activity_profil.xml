@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profil">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/back02"
+        />
+    <RelativeLayout
+        android:id="@+id/toolBarRL"
+        android:layout_width="match_parent"
+        android:background="@drawable/shape_toolbar02"
+        android:layout_height="?actionBarSize">
+        <ImageButton
+            android:id="@+id/BackBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="18dp"
+            android:background="@drawable/tab_background_unselected"
+            android:src="@drawable/ic_back_white"
+            />
+
+        <TextView
+            android:id="@+id/TitleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="الصّفحة الشّخصيّة"
+            android:textSize="19sp"
+
+            android:textColor="@color/white"
+
+
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/profileeditBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_edit_white"/>
+
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_rect01"
+        android:layout_marginTop="180dp"/>
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profilrIv"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:background="@color/white"
+        android:src="@drawable/ic_person_gray"
+        />
+    <TextView
+        android:id="@+id/namev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profilrIv"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:text="Full name"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/emailTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/namev"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:text="abc@example.com"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+
+        />
+    <LinearLayout
+        android:id="@+id/detailsL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/emailTv"
+        android:layout_marginTop="8dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الحساب"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:id="@+id/AccountTypeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N/A"
+                android:textColor="@color/black"
+
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ناشط منذ"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:id="@+id/membreDateTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N/A"
+                android:textColor="@color/black"
+
+                />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="قائمة المفضّلات"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/favouriteBookCountTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N/A"
+                android:textColor="@color/black"
+
+                />
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/gray03"
+        android:layout_below="@id/detailsL"
+
+
+        />
+    <TextView
+        android:id="@+id/favoriteBooksLbelTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view1"
+        android:padding="5dp"
+
+        android:text="الكتب المفضّلة"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/BookRv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/favoriteBooksLbelTv"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/row_pdf_favorite"/>
+
+
+</RelativeLayout>

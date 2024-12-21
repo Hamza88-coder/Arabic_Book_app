@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileEditActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolBarRL"
+        android:layout_width="match_parent"
+        android:background="@drawable/shape_toolbar01"
+        android:layout_height="250dp">
+
+        <ImageButton
+            android:id="@+id/BackBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="10dp"
+            android:background="@drawable/tab_background_unselected"
+            android:src="@drawable/ic_back_white"
+            android:padding="5dp"
+
+            />
+        <TextView
+            android:id="@+id/TitleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:text="تعديل الصّفحة الشّخصيّة"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+
+
+            />
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profilrIv"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/TitleTv"
+            android:layout_marginTop="40dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_person_gray"
+            />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="225dp"
+        >
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintEnabled="false">
+            <EditText
+                android:id="@+id/nameEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_edittext01"
+                android:drawableStart="@drawable/ic_person_gray"
+                android:drawablePadding="10dp"
+                android:hint="الإسم"
+                android:textSize="16sp"
+                android:inputType="textPersonName|textCapWords"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray01"
+                />
+            <Button
+                android:id="@+id/updateBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nameTil"
+
+                android:textColor="@color/white"
+                android:background="@drawable/shape_button01"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:text="تعديل"
+                android:textSize="20sp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

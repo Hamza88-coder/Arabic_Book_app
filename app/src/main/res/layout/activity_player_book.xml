@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity1"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/rest">
+
+    <!--    First Row-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <!--    Back Button-->
+        <ImageButton
+            android:id="@+id/backBtnPA"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/back_icon"
+            android:background="?attr/selectableItemBackground"
+            android:layout_marginStart="5dp"
+            android:contentDescription="@string/back_btn"
+            app:tint="@color/black"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:text="@string/world_of_books"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights"
+            android:textStyle="bold"/>
+
+        <!--        Favourite Button-->
+        <ImageButton
+            android:id="@+id/favouriteBtnPA"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/favourite_empty_icon"
+            android:background="?attr/selectableItemBackground"
+            android:layout_marginEnd="20dp"
+            android:contentDescription="@string/favourites_btn"
+            app:tint="@android:color/holo_red_dark" />
+    </LinearLayout>
+
+    <!--    Current Song Image-->
+
+
+    <!--    Current Song Name-->
+
+    <!--    Floating Buttons for Previous, Pause & Next-->
+
+    <!--    Seekbar & TextViews for it-->
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="100dp"
+        android:layout_weight="1"
+
+
+        android:orientation="horizontal">
+
+        <!--        Previous Button-->
+        <ImageButton
+            android:id="@+id/previousBtnPA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/ic_launcher_background"
+            android:contentDescription="Précédent"
+            android:src="@drawable/previouse_icon" />
+
+
+        <!--        Play & Pause Button-->
+
+        <ImageButton
+            android:id="@+id/play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/baseline_pause_24" />
+
+        <!--        Next Button-->
+        <ImageButton
+            android:id="@+id/nextBtnPA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/ic_launcher_background"
+            android:contentDescription="Suivant"
+            android:src="@drawable/next_icon" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tvSeekBarStart"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:text="@string/start_tv"
+            android:gravity="center"/>
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/seekBarPA"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights" />
+
+
+    </LinearLayout>
+
+    <!--    Last Row for Various Player Options-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <!--        Repeat Button-->
+        <ImageButton
+            android:id="@+id/repeatBtnPA"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/repeat_btn"
+            android:src="@drawable/repeat_icon"
+            app:tint="@color/cool_pink"
+            tools:ignore="NestedWeights" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

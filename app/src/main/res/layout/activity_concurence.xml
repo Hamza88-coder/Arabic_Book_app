@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back01"
+    tools:context=".Concurence">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profilrIv"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="29dp"
+        android:background="@color/white"
+        android:src="@drawable/b_fav2" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profilrIv2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="261dp"
+        android:background="@color/white"
+        android:src="@drawable/ic_person_gray" />
+
+    <Button
+        android:id="@+id/readBtn"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/profilrIv"
+        android:layout_marginStart="37dp"
+        android:layout_marginVertical="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+
+
+        android:background="@drawable/fad"
+        android:text="إقرأ العرض "
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+
+
+        />
+
+    <Button
+        android:id="@+id/readBtn2"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/profilrIv2"
+        android:layout_marginVertical="30dp"
+        android:layout_marginStart="270dp"
+        android:layout_marginTop="22dp"
+        android:layout_weight="1"
+
+        android:background="@drawable/fad"
+
+        android:text="إقرأ العرض "
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="70dp"
+        android:layout_height="wrap_content"
+        android:text="مسابقة نادي القراءة"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        />
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginVertical="120dp"
+
+        android:background="@drawable/fad2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginVertical="340dp"
+        android:padding="5dp"
+        android:text="بعد قرائتك للعرضين لمن تريد أن تمنح صوتك ؟"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/nbr1"
+        style="@style/TextAppearance.MaterialComponents.Caption"
+        android:layout_width="80dp"
+
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="480dp"
+        android:layout_marginStart="75dp"
+
+        android:padding="5dp"
+        android:text="N"
+        android:textColor="@color/black"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/nbr2"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="480dp"
+        android:layout_marginStart="315dp"
+        style="@style/TextAppearance.MaterialComponents.Caption"
+
+        android:padding="5dp"
+        android:text="N"
+        android:textColor="@color/black"
+        android:textSize="23sp" />
+
+    <Button
+        android:id="@+id/favouriteBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginVertical="426dp"
+        android:layout_marginStart="195px"
+        android:layout_weight="1"
+        android:background="@drawable/ma_black"
+
+
+         />
+    <Button
+        android:id="@+id/favouriteBtn2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginVertical="426dp"
+        android:layout_marginStart="800px"
+        android:layout_weight="1"
+        android:background="@drawable/ma_black"
+
+        />
+    <RelativeLayout
+        android:id="@+id/toolBarRL"
+        android:layout_width="match_parent"
+        android:background="@drawable/shape_toolbar02"
+        android:layout_height="?actionBarSize">
+        <ImageButton
+            android:id="@+id/BackBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="18dp"
+            android:background="@drawable/tab_background_unselected"
+            android:src="@drawable/ic_back_white"
+            />
+
+
+
+
+        <ImageButton
+            android:id="@+id/profileeditBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginStart="350dp"
+            android:layout_marginEnd="1dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_edit_white" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

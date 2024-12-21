@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ham">
+    <!-- all required permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".DashboardUserActivity" />
+        <activity android:name=".ForgotPassword" />
+        <activity android:name=".DashboardAdminActivity" />
+        <activity
+            android:name=".dic"
+            android:exported="true" />
+        <activity
+            android:name=".recyv_dic"
+            android:exported="false" />
+        <activity
+            android:name=".MAINCHAT"
+            android:exported="true" />
+        <activity
+            android:name=".edit_concurence"
+            android:exported="false" />
+        <activity
+            android:name=".Concurence"
+            android:exported="false" />
+        <activity
+            android:name=".WinnerEdit"
+            android:exported="false" />
+        <activity
+            android:name=".Winner"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pdfAddChild"
+            android:exported="false" />
+        <activity
+            android:name=".PdfViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pdfDetail"
+            android:exported="false" />
+        <activity
+            android:name=".pdfListeAdmin111"
+            android:exported="false" />
+
+        <activity
+            android:name=".AddDroit"
+            android:exported="false" />
+        <activity
+            android:name=".AddCustomer"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity1"
+            android:exported="true" />
+        <activity
+            android:name=".PdfEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PdfListAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PdfAddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CategoryActivity"
+            android:exported="false" />
+
+
+
+
+
+
+    </application>
+
+</manifest>
